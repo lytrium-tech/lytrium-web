@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#111822" />
+    
+    <!-- Default meta (will be overridden by react-helmet) -->
+    <title>Lytrium | Automatización con IA y Analítica de Datos</title>
+    <meta name="description" content="Automatizamos atención, ventas y operaciones con IA: WhatsApp, integraciones y analítica. Conectamos datos. Automatizamos decisiones.">
+    
+    <!-- Open Graph -->
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lytrium.tech/" />
+    <meta property="og:title" content="Lytrium | Automatización con IA y Analítica de Datos" />
+    <meta property="og:description" content="Automatizamos atención, ventas y operaciones con IA: WhatsApp, integraciones y analítica. Conectamos datos. Automatizamos decisiones." />
+    <meta property="og:image" content="https://lytrium.tech/og-image.jpg" />
+    <meta property="og:locale" content="es_CO" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lytrium | Automatización con IA y Analítica de Datos" />
+    <meta name="twitter:description" content="Automatizamos atención, ventas y operaciones con IA: WhatsApp, integraciones y analítica. Conectamos datos. Automatizamos decisiones." />
+    <meta name="twitter:image" content="https://lytrium.tech/og-image.jpg" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Prefers color scheme script (runs before React to prevent flash) -->
+    <script>
+      (function() {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = stored ? stored === 'dark' : prefersDark;
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
