@@ -211,82 +211,8 @@ const ProductsPage = () => {
                 Otras soluciones
               </h2>
               <p className="text-lg text-muted-foreground">
-                Todas nuestras soluciones parten del análisis de datos, no de supuestos, cada una con un enfoque exclusivo. Más detalle. Más claridad.
+                Proximamante
               </p>
-            </div>
-
-            {/* Segunda solución destacada (card grande) - RAG */}
-            <article id="rag" className="glass-card p-8 md:p-10 mb-12 scroll-mt-24">
-              <div className="grid lg:grid-cols-5 gap-8 items-start">
-                <div className="lg:col-span-3">
-                  <p className="text-sm font-medium text-primary mb-3 tracking-wide uppercase">
-                    {secondaryHighlight.category}
-                  </p>
-                  <h3 className="text-2xl md:text-3xl font-bold mb-3">
-                    {secondaryHighlight.title}
-                  </h3>
-                  <p className="text-primary/80 mb-4">
-                    {secondaryHighlight.subtitle}
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
-                    {secondaryHighlight.description}
-                  </p>
-                  <ul className="space-y-3">
-                    {secondaryHighlight.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-3 text-sm text-muted-foreground">
-                        <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="lg:col-span-2 flex flex-col justify-center">
-                  <div className="glass-card p-6 border-primary/20">
-                    <p className="font-medium text-foreground mb-2">Siguiente paso</p>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Te hacemos una evaluación rápida para definir alcance, integraciones y un plan de implementación.
-                    </p>
-                    <Link to="/es/#contacto">
-                      <Button variant="hero" className="w-full">
-                        Solicitar evaluación
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            {/* Cards pequeñas */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {otherSolutions.map((solution) => (
-                <article key={solution.title} id={solution.id} className="glass-card p-8 flex flex-col scroll-mt-24">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary mb-6">
-                    <solution.icon className="h-6 w-6" />
-                  </div>
-                  
-                  <h3 className="text-xl font-semibold mb-3">{solution.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-6 flex-1">
-                    {solution.description}
-                  </p>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {solution.features.map((feature) => (
-                      <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <div className="h-1.5 w-1.5 rounded-full bg-primary" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <Link to="/es/#contacto" className="mt-auto">
-                    <Button variant="outline" className="w-full group">
-                      Saber más
-                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                  </Link>
-                </article>
-              ))}
             </div>
           </div>
         </section>
