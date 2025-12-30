@@ -12,8 +12,8 @@ const steps = [{
 }, {
   icon: BarChart3,
   number: '03',
-  title: 'Automatizas y escalas',
-  description: 'Tu asistente atiende, cualifica leads y agenda citas mientras tú te enfocas en cerrar.'
+  title: 'Automatizamos la atención',
+  description: 'Tu asistente atiende y ejecuta. Nosotros te entregamos métricas claras para que optimices y escales.'
 }];
 const HowItWorks = () => {
   return <section id="como-funciona" className="section-padding section-separator bg-background" aria-labelledby="how-it-works-title">
