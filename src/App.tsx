@@ -2,10 +2,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import ScrollManager from "@/components/layout/ScrollManager";
-import { useEffect } from "react";
 
 // Pages
 import HomePage from "./pages/es/HomePage";
@@ -18,23 +17,6 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const TrailingSlashRedirect = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const { pathname, search, hash } = location;
-
-    if (pathname === "/" || pathname.endsWith("/") || pathname.includes(".")) {
-      return;
-    }
-
-    navigate(`${pathname}/${search}${hash}`, { replace: true });
-  }, [location, navigate]);
-
-  return null;
-};
-
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
@@ -42,7 +24,6 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <TrailingSlashRedirect />
           <ScrollManager />
           <Routes>
             {/* Redirect root to Spanish home */}
