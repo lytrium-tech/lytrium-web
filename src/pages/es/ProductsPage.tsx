@@ -91,6 +91,7 @@ const ProductsPage = () => {
           content="Catálogo de soluciones Lytrium: automatización con IA para WhatsApp y canales digitales, integración de datos, flujos operativos y analítica para tomar mejores decisiones."
         />
         <link rel="canonical" href="https://lytrium.tech/es/products/" />
+        <meta name="robots" content="index, follow" />
         
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lytrium.tech/es/products/" />
