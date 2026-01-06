@@ -59,6 +59,7 @@ const HomePage = () => {
           content="Automatizamos atención, ventas y operaciones con IA: WhatsApp, integraciones, CRM y analítica de datos. Conectamos datos. Automatizamos decisiones."
         />
         <link rel="canonical" href="https://lytrium.tech/es/" />
+        <meta name="robots" content="index, follow" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />

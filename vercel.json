@@ -1,5 +1,13 @@
 {
+  "redirects": [
+    { "source": "/es", "destination": "/es/", "permanent": true },
+    { "source": "/es/about", "destination": "/es/about/", "permanent": true },
+    { "source": "/es/privacy", "destination": "/es/privacy/", "permanent": true },
+    { "source": "/es/terms", "destination": "/es/terms/", "permanent": true },
+    { "source": "/es/cookies", "destination": "/es/cookies/", "permanent": true },
+    { "source": "/es/products", "destination": "/es/products/", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

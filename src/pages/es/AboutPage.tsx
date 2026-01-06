@@ -22,6 +22,7 @@ const AboutPage = () => {
         <title>Sobre Nosotros | Lytrium</title>
         <meta name="description" content="Conoce a Lytrium: diseñamos automatizaciones con IA y analítica de datos para reducir fricción operativa, mejorar procesos y escalar decisiones." />
         <link rel="canonical" href="https://lytrium.tech/es/about/" />
+        <meta name="robots" content="index, follow" />
         
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lytrium.tech/es/about/" />
